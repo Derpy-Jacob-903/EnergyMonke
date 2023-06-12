@@ -238,7 +238,7 @@ public class PainBeams : ModUpgrade<EnergyMonkey>
     {
         var attackModel = towerModel.GetAttackModel();
         var projectile = attackModel.weapons[0].projectile;
-        projectile.display.guidRef = "ec02a14e6de760f45b5ce1212d49f797"; //Uses Vengeful Adora's base projectile's display, cause it looks cool.
+        //projectile.display.guidRef = "ec02a14e6de760f45b5ce1212d49f797"; //Uses Vengeful Adora's base projectile's display, cause it looks cool. //This dosen't work
         foreach (var weaponModel in towerModel.GetWeapons().ToArray()) //NOTE: how to use Voidora's projectile displays?
         {
             weaponModel.Rate *= 1.5f / 2f; // +0.33%.. attack speed
